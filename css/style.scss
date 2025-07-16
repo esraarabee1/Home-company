@@ -56,7 +56,12 @@ $screens:(
   --blue:#1C2792;
   --gray:#21272A;
   --darkblue: #001D6C;
+  --CoolGray-30:#C1C7CD;
+  --CoolGray-10:#F2F4F8;
+  --brown: #454142;
+  --CoolGray-20:#DDE1E6;
 }
+/*------------HEADER-----------------*/
 .header{
   padding: 16px 80px;
 }
@@ -74,12 +79,14 @@ $screens:(
   font-weight: 500;
   line-height: 100%; 
 }
+
+/*------------HERO SEC-----------------*/
 h1{
     color:var(--white);
     font-family: Roboto;
     font-size: 54px;
     font-weight: 700;
-    line-height: 110%; /* 59.4px */
+    line-height: 110%; 
 }
 .disc{
     color:var(--white);
@@ -113,7 +120,7 @@ h1{
     padding: 28px;
 }
 
-/**/
+/*---------------CASE ----------------------*/
 .case{
     padding-top:80px ;
     padding-bottom:80px ;
@@ -147,7 +154,7 @@ h2{
 }
 .item{
   border-radius: 8px;
-  border: 1px solid var(--CoolGray-20, #DDE1E6);
+  border: 1px solid var(--CoolGray-20);
   background: var(--Default-White, var(--white));
     
 }
@@ -161,7 +168,6 @@ h2{
     color: var(--CoolGray-90, var(--gray));
     font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: 110%; /* 22px */
 }
@@ -169,7 +175,6 @@ h2{
     color: var(--CoolGray-90,var(--gray));
     font-family: Roboto;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 140%; 
 }
@@ -177,17 +182,16 @@ h2{
     color: #1B45B4;
     font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     padding-top: 23px;
     font-weight: 500;
-    line-height: 100%; /* 20px */
+    line-height: 100%; 
     letter-spacing: 0.5px;
     display: flex;
     align-items: center;
 }
-/**/
+/*---------------CUSTOMER-------------------*/
 .customers{
-    background: linear-gradient(270deg, #454142 0.05%, #1C2792 99.95%);
+    background: linear-gradient(270deg, var(--brown) 0.05%, var(--blue) 99.95%);
     padding-top: 80px;
     padding-bottom: 80px;
     
@@ -204,7 +208,6 @@ h2{
     text-align: center;
     font-family: Roboto;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 140%;
 }
@@ -213,11 +216,10 @@ h2{
     text-align: center;
     font-family: Roboto;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: 110%; /* 26.4px */
+    line-height: 110%;
 }
-/**/
+/*------------PROFICIENT SEC----------------*/
 .Proficiency{
   padding: 80px;
 }
@@ -250,18 +252,78 @@ h2{
 /**/
 .parteners{
   padding: 80px;
-  background: linear-gradient(270deg, #454142 0.02%, #1C2792 100.81%);
+  background: linear-gradient(270deg, var(--brown) 0.02%, var(--blue) 100.81%);
 }
-/**/
+/*---------FORM-------------------*/
+.form-sec{
+  padding:80px;
+}
+.gap-48{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.btn{
+  border-radius: 8px;
+  background:var(--orange);
+  padding: 16px 12px;
+  color: var(--gray);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 100%; 
+  letter-spacing: 0.5px;
+  border: none;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+.field{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+label{
+  color: var(--CoolGray-90, var(--gray));
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+}
+.input{
+  min-width: 700px;
+  padding: 12px 16px;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid var(--CoolGray-30);
+  background: var(--CoolGray-10);
+  border: none;
+}
+.textarea{
+  display: flex;
+  min-height: 96px;
+  min-width: 700px;
+  padding: 14px 16px;
+  align-items: center;
+  align-self: stretch;
+  border-bottom: 1px solid var(--CoolGray-30);
+  background: var(--CoolGray-10);
+  border: none;
+}
+/*----------FOOTER---------------------*/
 .footer{
-    background: #454142;
+    background: var(--brown);
     display: flex;
     padding: 24px 80px;
     flex-direction: column;
     align-items: center;
 }
 .copy{
-    color: var(--Default-White, var(--white));
+    color: var(--white);
     text-align: center;
     font-family: Roboto;
     font-size: 14px;
